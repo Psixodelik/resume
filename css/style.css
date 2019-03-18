@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,500');
+
+* {
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "Fira Sans";
+  background: #f9f9f9;
+}
+
+p {
+  margin: 10px 0 20px;
+}
+
+h1, h2, h3 {
+  font-family: "Roboto Mono";
+  font-weight: 500;
+  margin-bottom: 0.5em;
+}
+
+h3 {
+  text-transform: uppercase;
+  letter-spacing: 0.075em;
+}
+
+section.two-col {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 30px auto;
+}
+
+section.two-col .left {
+  width: 25%;
+}
+
+.fixed {
+  position: fixed;
+}
+
+section.two-col .left .photo img {
+  width: 100%;
+}
+
+section.right {
+  width: 70%;
+  margin-left: 30%;
+}
+
+footer {
+  height: 100px;
+}
+
+.name h1 {
+  font-size: 3em;
+  line-height: 1em;
+}
+
+.name p {
+  font-size: 1.5em;
+}
+
+.name {
+  margin-bottom: 30px;
+}
+
+ul {
+  padding-left: 40px;
+  line-height: 1.5em;
+  margin: 10px 0 20px;
+}
+
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.links-item {
+  margin-right: 2em;
+  margin-bottom: 2em;
+}
+
+.links-item a {
+  display: block;
+}
+
+.links-item i {
+  font-size: 3em;
+  color: #585858;
+  transition: .7s;
+}
+
+i.fab.fa-github:hover {
+  color: #000;
+}
+
+i.fab.fa-vk:hover {
+  color: #4A76A8;
+}
+
+i.fab.fa-facebook-square:hover {
+  color: #4267B2;
+}
+
+i.fab.fa-telegram:hover {
+  color: #4A76A8;
+}
+
+.experience-item {
+  margin: 30px 0;
+  border: 1px solid #CCC;
+  padding: 15px 20px;
+  font-size: 14px;
+  line-height: 1.5em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.description {
+  margin-top: 15px;
+  width: 100%;
+}
+
+
+.time, .company-name, .position {
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.075em;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px; 
+}
+
+.skills-item {
+  width: 25%;
+  padding: 20px 35px;
+  background: #585858;
+  margin-bottom: 25px;
+  color: #FFF;
+}
+
+@media (max-width: 800px) {
+  .skills-item {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  section.two-col {
+    display: block;
+  }
+
+  section.two-col .left {
+    width: 100%;
+  }
+
+  .fixed {
+    position: unset;
+  }
+
+  section.right {
+    width: 100%;
+    margin-left: 0;
+  }
+
+}

@@ -153,11 +153,8 @@ i.fab.fa-telegram:hover {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 20px 0; 
+  flex-wrap: wrap;
+  margin: 20px 0;
 }
 
 .books {
@@ -190,9 +187,9 @@ i.fab.fa-telegram:hover {
   display: flex;
   font-size: 40px;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 30%;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 33%;
   margin-bottom: 3%;
 }
 
@@ -222,12 +219,12 @@ i.fab.fa-telegram:hover {
   bottom: 0;
   background-image: -webkit-linear-gradient(left, transparent 0%, transparent 50%, #fff 50%, #fff 100%);
   background-image: linear-gradient(to right, transparent 0%, transparent 50%, #fff 50%, #fff 100%);
-  background-size: 6px 100%; /* Ширина деления = 6px / 2 = 3px */
+  background-size: 6px 100%; /* Ð¨Ð¸Ñ€Ð¸Ð½Ð° Ð´ÐµÐ»ÐµÐ½Ð¸Ñ = 6px / 2 = 3px */
 }
 
 .grayback {
   position: relative;
-  left: 30%; /* Текущее состояние */
+  left: 30%; /* Ð¢ÐµÐºÑƒÑ‰ÐµÐµ ÑÐ¾ÑÑ‚Ð¾ÑÐ½Ð¸Ðµ */
   width: 100%;
   height: 100%;
   background-color: #ddd;
@@ -256,6 +253,15 @@ i.fab.fa-telegram:hover {
 .git .grayback {
   left: 30%;
 }
+
+.js .grayback {
+  left: 50%;
+}
+
+.react .grayback {
+  left: 30%;
+}
+
 @media (max-width: 800px) {
   .skill-item {
     width: 100%;
